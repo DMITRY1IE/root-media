@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test zadanie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Каталог</h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="#"><img src="img/kros.svg" alt="#">Обувь</a></li>
+                <li><a href="#"><img src="img/shtani.svg" alt="#">Другая одежда</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="catalog">
+                <a href="#" class="catalog__button-mobile"><img src="img/sliders.svg" alt="#"> ОТКРЫТЬ ФИЛЬТРЫ</a>
+                <div class="catalog__sort">
+                    <p class="sort">Сортировать</p>
+                    <p class="active">по цене <img src="img/str.svg" alt="#"></p>
+                    <p>по алфавиту</p>
+                    <p>по дате добавления</p>
+                </div>
+                <div class="catalog__cards-container">
+                    <div class="catalog__card">
+                        <img src="img/1.png" alt="#">
+                        <p class="card__price">3771 ₽</p>
+                        <p><strong>Nike</strong> / Кроссовки T-LITE XI</p>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="img/2.png" alt="#">
+                        <p class="card__price">3771 ₽</p>
+                        <p><strong>Nike</strong> / Кроссовки T-LITE XI</p>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="img/3.png" alt="#">
+                        <p class="card__price">3771 ₽</p>
+                        <p><strong>Nike</strong> / Кроссовки T-LITE XI</p>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="img/1.png" alt="#">
+                        <p class="card__price">3771 ₽</p>
+                        <p><strong>Nike</strong> / Кроссовки T-LITE XI</p>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="img/2.png" alt="#">
+                        <p class="card__price">3771 ₽</p>
+                        <p><strong>Nike</strong> / Кроссовки T-LITE XI</p>
+                    </div>
+                    <div class="catalog__card">
+                        <img src="img/3.png" alt="#">
+                        <p class="card__price">3771 ₽</p>
+                        <p><strong>Nike</strong> / Кроссовки T-LITE XI</p>
+                    </div>
+                </div>
+                <a href="#" class="catalog__button">ЗАГРУЗИТЬ ЕЩЕ</a>
+            </div>
+            <form action="#" class="filter-form">
+                <div class="filter-form__inner">
+                    <h2>Фильтры</h2>
+                    <p>Сбросить <img src="img/x.svg" alt="#"></p>
+                </div>
+                
+                <div class="filter-form__container">
+                    <div class="filter-form__price">
+                        <h3>Цена, ₽<h3>
+                            <div class="wrapper">
+      
+                                <div class="price-input">
+                                  <div class="field">
+                                    <span>от</span>
+                                    <input type="number" class="input-min" value="12400" onkeypress='validate(event)'>
+                                  </div>
+                                  
+                                  <div class="field">
+                                    <span>до</span>
+                                    <input type="number" class="input-max" value="40000" onkeypress='validate(event)'>
+                                  </div>
+                                </div>
+                                <div class="slider">
+                                  <div class="progress"></div>
+                                </div>
+                                <div class="range-input">
+                                  <input type="range" class="range-min" min="0" max="50000" value="12400" step="100">
+                                  <input type="range" class="range-max" min="0" max="50000" value="40000" step="100">
+                                </div>
+                              </div>
+                          
+                    </div>
+                    <div class="filter-form__product">
+                        <h3>Тип продукта</h3>
+                        
+                        <p><input checked type="radio" name="type-of-product" value="1">Первый тип</p>
+                        <p><input type="radio" name="type-of-product" value="2">Второй тип</p>
+                    </div>
+                    <div class="filter-form__category">
+                        <h3>Категория</h3>
+                        <p><input type="radio" name="category" value="shoes">Обувь</p>
+                        <p><input checked type="radio" name="category" value="clothes">Одежда</p>
+                        <p><input type="radio" name="category" value="rest">Остальное</p>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
