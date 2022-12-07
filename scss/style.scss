@@ -86,7 +86,8 @@
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-gap: 30px;
                 margin-bottom: 30px;
-                .catalog__card{
+                .card{
+                  text-decoration: none;
                     img{
                         margin-bottom: 16px;
                     }
@@ -399,6 +400,21 @@
       }
 }
 @media(max-width:580px){
+  body{
+    margin: 5px;
+  }
+  .card img {
+       
+    width: 100%;
+  }
+  .catalog__sort {
+    font-size: 12px !important;
+  }
+  .card p {
+    font-size: 15px;
+  }
+}
+@media(max-width:400px){
     .container{
         max-width: 310px;
         
@@ -417,7 +433,7 @@
       .catalog__sort {
         font-size: 13px !important;
       }
-      .catalog__card img {
+      .card img {
        
         width: 100%;
       }
